@@ -9,9 +9,12 @@ import SearchInput from "~/SearchInput";
 import { AnimatePresence, motion } from "framer-motion";
 import DetailView from "~/components/DetailView";
 import router from "next/router";
+<<<<<<< HEAD
 import { Ring, Waveform } from "@uiball/loaders";
 import Dropdown from "~/components/Dropdown";
 import { XMarkIcon } from "@heroicons/react/20/solid";
+=======
+>>>>>>> 549d843 (bjk)
 
 const fetchAccolades = async (url: string) => {
     const response = await fetch(url);
