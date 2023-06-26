@@ -154,6 +154,10 @@ messaging: '', frequency: '', notifDate: '', cmcontact: '', sourceatr: '', where
                   className= "p-3 rounded-xl w-96" placeholder="Limitations on Promotion">
                   </input>
 
+                  <div className="flex flex-col items-center justify-center">
+                    <button className="bg-white text-xl text-[#541A83]  py-4 m-1 w-96 rounded-2xl">Upload an Image</button>
+                  </div>
+
                   <textarea 
                   name="extSource" value={form.extSource} onChange ={e=> setForm({...form, extSource: e.target.value})}
                   className= "p-3 rounded-xl h-48 w-96" placeholder="External Source & Contact">
