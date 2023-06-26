@@ -61,10 +61,14 @@ messaging: '', frequency: '', notifDate: '', cmcontact: '', sourceatr: '', where
   async function handleSubmit (data: FormData) {
     try {
 <<<<<<< HEAD
+<<<<<<< HEAD
       await create(data);
 =======
       {create(data);}
 >>>>>>> b443b1c (meowow)
+=======
+      await create(data);
+>>>>>>> 36c7183 (Changed "handleSumit" async function)
       notify()
     } catch (error) {
       console.log('error in handleSubmit')
