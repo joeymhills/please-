@@ -1,9 +1,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 //@ts-ignore
 >>>>>>> b897a6a (jsdk)
+=======
+
+>>>>>>> 67756f5 (meowo)
 import type { NextApiRequest, NextApiResponse } from "next";
 import prisma from "../../../prisma/client";
 
