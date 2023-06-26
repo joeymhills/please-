@@ -25,6 +25,7 @@ interface create {
     sourceatr: string
     wherepubint: string
     promotionlim: string
+<<<<<<< HEAD
     imgurl:string
 }
 =======
@@ -32,6 +33,9 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import prisma from "../../../prisma/client";
 
 >>>>>>> 61b31cc (ftg)
+=======
+}
+>>>>>>> a5bf093 (meowowwo)
 
 export default async function handler(req:NextApiRequest, res:NextApiResponse) {
 
