@@ -28,7 +28,11 @@ export default async function handler(
                     },
                 },
                 {
+<<<<<<< HEAD
                     outcome: {
+=======
+                    comments: {
+>>>>>>> 61b31cc (ftg)
                         contains: query,
                     },
                 },                {
@@ -36,6 +40,7 @@ export default async function handler(
                         contains: query,
                     },
                 },
+<<<<<<< HEAD
                 {
                     comments: {
                         contains: query,
@@ -62,6 +67,8 @@ export default async function handler(
                     },
                 },
 
+=======
+>>>>>>> 61b31cc (ftg)
             ],
         },
     });

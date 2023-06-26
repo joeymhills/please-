@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 import type { NextApiRequest, NextApiResponse } from "next";
 import prisma from "../../../prisma/client";
 
@@ -41,3 +42,13 @@ export default async function handler(req:NextApiRequest, res:NextApiResponse) {
         res.status(500).json({message: 'error with prisma'})
     }
 }
+=======
+
+const update = () => {
+    return(
+        <>
+        </>
+    )
+}
+export default update
+>>>>>>> 61b31cc (ftg)

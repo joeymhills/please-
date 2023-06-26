@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 import type { NextApiRequest, NextApiResponse } from "next";
 import prisma from "../../../prisma/client";
@@ -18,18 +19,31 @@ interface create {
     promotionlim: string
     imgurl:string
 }
+=======
+import type { NextApiRequest, NextApiResponse } from "next";
+import prisma from "../../../prisma/client";
+
+>>>>>>> 61b31cc (ftg)
 
 export default async function handler(req:NextApiRequest, res:NextApiResponse) {
 
     const {name, institution, outcome, extSource, intSource, messaging, frequency, notifDate, 
+<<<<<<< HEAD
         cmcontact, sourceatr, wherepubint, promotionlim,comments,imgurl} = req.body
+=======
+        cmcontact, sourceatr, wherepubint, promotionlim,comments} = req.body
+>>>>>>> 61b31cc (ftg)
 
     try {
         await prisma.accolade.create({
             data: {
                 institution, name, comments, outcome, extSource,
                 intSource, messaging, frequency, notifDate, cmcontact,
+<<<<<<< HEAD
                 sourceatr, wherepubint, promotionlim,imgurl
+=======
+                sourceatr, wherepubint, promotionlim
+>>>>>>> 61b31cc (ftg)
 
             }})
         res.status(200).json({message: 'accolade created'})
