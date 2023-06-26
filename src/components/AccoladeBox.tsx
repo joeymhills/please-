@@ -92,9 +92,12 @@ messaging: '', frequency: '', notifDate: '', cmcontact: '', sourceatr: '', where
                  className="flex flex-col items-center justify-center w-200">
                   
                   <div className="grid grid-cols-2 gap-3 p-5">
+<<<<<<< HEAD
                   
                   {(page == 1) && (
                   <>
+=======
+>>>>>>> 11078ab (styleing)
                   <input 
                   type="text" name="institution" value={form.institution} onChange ={e=> setForm({...form, institution: e.target.value})} className= "p-3 rounded-xl w-96" placeholder="Institution name">
                   </input>
