@@ -215,10 +215,14 @@ const searchPage = () => {
               size={80}
 =======
           <div className="w-full flex flex-col items-center justify-center">
-            <div aria-live="polite" aria-busy={isLoading}>
+            <div className="pt-5" aria-live="polite" aria-busy={isLoading}>
               {isLoading && <Ring 
+<<<<<<< HEAD
               size={60}
 >>>>>>> db3a024 (meowowow)
+=======
+              size={80}
+>>>>>>> 8194328 (finalmente)
               lineWeight={5}
               speed={2} 
               color="white" 
