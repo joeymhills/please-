@@ -21,8 +21,11 @@ const config = {
   eslint: {
     ignoreDuringBuilds: true,
 },
+<<<<<<< HEAD
 experimental: {
   esmExternals: false, // THIS IS THE FLAG THAT MATTERS
 },
+=======
+>>>>>>> afb2223 (meowowo)
 };
 export default config;
