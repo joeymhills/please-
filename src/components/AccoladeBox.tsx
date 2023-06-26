@@ -80,7 +80,11 @@ messaging: '', frequency: '', notifDate: '', cmcontact: '', sourceatr: '', where
           <AnimatePresence>
             <motion.div className="flex fixed z-10 min-h-screen w-screen flex-col items-center bg-black/50 ">
               <motion.div
+<<<<<<< HEAD
               className={'flex w-200 flex-col z-20 rounded-2xl m-4 items-center justify-center bg-slate-100'}>
+=======
+              className={`flex w-236 flex-col z-20 rounded-2xl m-4 items-center justify-center bg-slate-100`}>
+>>>>>>> aa38aee (meow)
                 <div className="flex flex-col pt-2 items-center justify-center">
                 <h1 className="font-bentonbold text-[#541A83] text-4xl py-4 ">Create an Accolade</h1>
 

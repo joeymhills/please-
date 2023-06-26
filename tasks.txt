@@ -13,6 +13,17 @@
 
 (6/25/23) ~ 3hours{
 - Finished Accolade Creator, now successfully interacts with "api/create"
+<<<<<<< HEAD
+=======
+}
+
+(6/26/23) {
+- Success messages
+- center "SearchInput" on "Search.tsx"
+- Finish adding all possible fields to Accolade creator
+- Fix GitHub repo and deploy to vercel
+
+>>>>>>> aa38aee (meow)
 }
 
 (6/26/23) {
@@ -33,6 +44,12 @@
 STUFF TO DO: {
     
     BACKEND/API {
+<<<<<<< HEAD
+=======
+    - Add editing functionality inside of the detailed view(Figure out POST requests)
+    - Add "Create another" button for "AccoladeBox"
+    - IMAGE UPLOAD SUPPORT (most likely through s3 bucket)
+>>>>>>> aa38aee (meow)
     - dropdown for common institutions in accolade box
     - user tiers
     - using shared state/useEffect in order to update 
@@ -45,6 +62,7 @@ STUFF TO DO: {
     
     STYLING {
     
+<<<<<<< HEAD
     - Add titles for fields in edit view
     - Add responsiveness to design (site-wide) {
         -landing page
@@ -56,6 +74,11 @@ STUFF TO DO: {
     }
     - cute animations
     - fix landing page nyu image
+=======
+    - Add responsiveness to design (site-wide)
+    - fix landing page grid(uneven)
+    - update landing page grid images
+>>>>>>> aa38aee (meow)
     - make comments and messaging "scrollable" in detail view
 
     }

@@ -45,7 +45,11 @@ const Home: NextPage = () => {
       
         <AccoladeBox />
         
+<<<<<<< HEAD
         <div className=" w-10 h-10 text-white fixed top-0 right-0 m-4 z-20 hover: cursor-pointer" onClick={() => setShowForm(false)}><XMarkIcon /></div>
+=======
+        <button type="button" className="text-white text-5xl fixed top-0 right-0 m-4 z-20"onClick={() => setShowForm(false)}>X</button>
+>>>>>>> aa38aee (meow)
         
         </motion.div>)}
       </AnimatePresence>
