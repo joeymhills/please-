@@ -3,11 +3,17 @@ import { motion, AnimatePresence } from "framer-motion";
 import React from "react";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+<<<<<<< HEAD
 import "@uploadthing/react/styles.css";
 import { OurFileRouter } from "~/server/uploadthing";
 import { UploadButton } from "~/utils/uploadthing";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 import Page from "~/pages/sign-in/[[...index]]";
+=======
+import { url } from "inspector";
+import { UploadButton } from "@uploadthing/react";
+
+>>>>>>> baa6929 (emwo)
 
 const AccoladeBox = () => {
   
@@ -25,7 +31,10 @@ const AccoladeBox = () => {
     sourceatr: string
     wherepubint: string
     promotionlim: string
+<<<<<<< HEAD
     imgurl: string
+=======
+>>>>>>> baa6929 (emwo)
   }  
   const notify = () => toast.success('Form submission was successful!', {
     position: "top-center",
@@ -47,10 +56,14 @@ messaging: '', frequency: '', notifDate: '', cmcontact: '', sourceatr: '', where
   async function create(data: FormData) { 
     try {
 <<<<<<< HEAD
+<<<<<<< HEAD
       await fetch("http://localhost:3000/api/create",{
 =======
       await fetch('https://please-work-beta.vercel.app/api/create',{
 >>>>>>> d8678dd (meow)
+=======
+      await fetch("http://localhost:3000/api/create",{
+>>>>>>> baa6929 (emwo)
         body: JSON.stringify(data),
         headers: { 'Content-Type': 'Application/json'},
         method: 'POST'});
@@ -194,11 +207,17 @@ messaging: '', frequency: '', notifDate: '', cmcontact: '', sourceatr: '', where
 
                   <UploadButton
                     endpoint="imageUploader"
+<<<<<<< HEAD
                     onClientUploadComplete={(res:any) => {
                       // Do something with the response
                       const response = (res[0])
                       setForm({...form, imgurl: response.fileUrl})
                       console.log(form)
+=======
+                    onClientUploadComplete={(res) => {
+                      // Do something with the response
+                      console.log("Files: ", res);
+>>>>>>> baa6929 (emwo)
                       alert("Upload Completed");
                     }}
                     onUploadError={(error: Error) => {

@@ -52,9 +52,13 @@ STUFF TO DO: {
 >>>>>>> aa38aee (meow)
     - dropdown for common institutions in accolade box
     - user tiers
+<<<<<<< HEAD
     - using shared state/useEffect in order to update 
     -filtering and sorting
     -update state of deleted/edited entry
+=======
+    -filtering and sorting
+>>>>>>> baa6929 (emwo)
 
 
     -fix all TS errors (change build command back to default)

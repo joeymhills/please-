@@ -22,10 +22,16 @@ const config = {
     ignoreDuringBuilds: true,
 },
 <<<<<<< HEAD
+<<<<<<< HEAD
 experimental: {
   esmExternals: false, // THIS IS THE FLAG THAT MATTERS
 },
 =======
 >>>>>>> afb2223 (meowowo)
+=======
+experimental: {
+  esmExternals: false, // THIS IS THE FLAG THAT MATTERS
+},
+>>>>>>> baa6929 (emwo)
 };
 export default config;
