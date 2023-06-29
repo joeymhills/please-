@@ -5,6 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import "@uploadthing/react/styles.css";
 import { OurFileRouter } from "~/server/uploadthing";
 import { UploadButton } from "~/utils/uploadthing";
@@ -20,6 +21,11 @@ import { UploadButton } from "@uploadthing/react";
 import "@uploadthing/react/styles.css";
 import { OurFileRouter } from "~/server/uploadthing";
 >>>>>>> 7749313 (meow)
+=======
+import "@uploadthing/react/styles.css";
+import { OurFileRouter } from "~/server/uploadthing";
+import { UploadButton } from "~/utils/uploadthing";
+>>>>>>> 1aef30b (meowowowwo)
 
 const AccoladeBox = () => {
   
@@ -215,7 +221,7 @@ messaging: '', frequency: '', notifDate: '', cmcontact: '', sourceatr: '', where
                   </div>
                 </div>
 
-                  <UploadButton<OurFileRouter>
+                  <UploadButton
                     endpoint="imageUploader"
 <<<<<<< HEAD
 <<<<<<< HEAD

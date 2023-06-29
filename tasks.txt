@@ -43,10 +43,13 @@
 - Added image uploads
 - Styled images within card
 - Fixed font sizes
+<<<<<<< HEAD
 }
 (6/30/23) {
 - implemented delete accolade feature
 - implemented editing feature
+=======
+>>>>>>> 1aef30b (meowowowwo)
 }
 STUFF TO DO: {
     
