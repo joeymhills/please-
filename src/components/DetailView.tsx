@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
+<<<<<<< HEAD
 import { ChevronLeftIcon, ChevronRightIcon} from '@heroicons/react/20/solid'
 import { NextApiResponse } from "next";
 import Link from "next/link";
@@ -7,6 +8,11 @@ import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { UploadButton } from "~/utils/uploadthing";
 import "@uploadthing/react/styles.css";
+=======
+import Link from "next/link";
+import { useState } from "react";
+
+>>>>>>> 7749313 (meow)
 
 interface Props {
 id:string,
@@ -43,11 +49,11 @@ interface FormData {
   id: string
 } 
 
-
 const DetailView: React.FC<Props> = (
     {id,name,institution,outcome,extSource,intSource,messaging, 
     comments,frequency,notifDate,cmcontact,sourceatr,wherepubint,promotionlim,imgurl}) => {
     
+<<<<<<< HEAD
       const [deleteWindow,setDeleteWindow] = useState(false)
       const [editWindow, setEditWindow] = useState(false)
       const [editPage, setEditPage] = useState(1)
@@ -100,13 +106,22 @@ const DetailView: React.FC<Props> = (
         theme: "light",
         });
         
+=======
+      const [deleteWindow,SetDeleteWindow] = useState(false)
+
+>>>>>>> 7749313 (meow)
       async function deleteAccolade(id: string) { 
         try {
           await fetch("http://localhost:3000/api/delete",{
             body: JSON.stringify(id),
             headers: { 'Content-Type': 'Application/json'},
+<<<<<<< HEAD
             method: 'POST'});
             notifyDelete()
+=======
+            method: 'DELETE'});
+            console.log('id is: ', id)
+>>>>>>> 7749313 (meow)
         }
         catch (error) {
             console.log('error in DELETE request()')
@@ -119,12 +134,17 @@ const DetailView: React.FC<Props> = (
             <motion.div className="flex fixed top-0 right-0 z-30 min-h-screen w-screen flex-col items-center bg-black/50 ">  
 
               {deleteWindow &&(
+<<<<<<< HEAD
                 <motion.div className="flex fixed top-0 right-0 z-30 min-h-screen w-screen flex-col bg-black/50 items-center">
+=======
+                <motion.div className="flex fixed top-0 right-0 z-30 min-h-screen w-screen flex-col items-center">
+>>>>>>> 7749313 (meow)
                     <div className="w-96 h-54 z-80 p-5 m-2 bg-white border-2 border-slate-300 fixed rounded-2xl">
                         <div className="flex flex-col justify-center items-center gap-3"> 
                             <div>
                                 <p className="text-center">Are you sure you want to delete this entry?(This action cannot be undone)</p>
                             </div>
+<<<<<<< HEAD
                             
                               <div className="flex flex-row justify-center gap-2">
                                   <button className="bg-white border-2 border-[#541A83] rounded-2xl text-[#541A83] h-8 w-32" onClick={()=>setDeleteWindow(false)}>Cancel</button>
@@ -299,6 +319,16 @@ const DetailView: React.FC<Props> = (
           </div>
           </motion.div>
               )}
+=======
+                            <div className="flex flex-row justify-center gap-2">
+                                <button className="bg-white border-2 border-[#541A83] rounded-2xl text-[#541A83] h-8 w-32" onClick={()=>deleteAccolade(id)}>Cancel</button>
+                                <button className="bg-red-500 rounded-2xl text-white h-8 w-32" onClick={()=>SetDeleteWindow(false)}>Delete</button>
+                            </div>
+                        </div>
+                    </div>
+                </motion.div>
+              )}
+>>>>>>> 7749313 (meow)
              
             <div className=" flex flex-col gap-6 justify-center align-middle w-200 bg-white rounded-lg border-2 p-10 m-6 text-2xl font-bentonbold">
                 <div >{institution}</div> 
@@ -316,6 +346,7 @@ const DetailView: React.FC<Props> = (
                 {wherepubint !== "" && (<div className="font-bentonreg text-lg"><span className="font-bentonbold">Where Published Internally: </span>{wherepubint}</div>)}
                 {promotionlim !== "" && (<div className="font-bentonreg text-lg"><span className="font-bentonbold">Limitations on Promotion: </span>{promotionlim}</div>)}
                 <div className="flex flex-row justify-center items-center gap-3">
+<<<<<<< HEAD
                   <button className="bg-white border-2 font-bentonreg border-[#541A83] text-[#541A83] h-8 w-36 rounded-2xl"onClick={()=>setEditWindow(true)}>Edit</button>
                   <button className="bg-red-500 w-36 h-8 text-white font-bentonreg rounded-2xl"onClick={()=>setDeleteWindow(true)}>Delete</button>
                 </div>
@@ -331,6 +362,11 @@ const DetailView: React.FC<Props> = (
                   pauseOnHover
                   theme="light"
                   />
+=======
+                  <button className="bg-white border-2 font-bentonreg border-[#541A83] text-[#541A83] h-8 w-36 rounded-2xl"onClick={()=>SetDeleteWindow(true)}>Edit</button>
+                  <button className="bg-red-500 w-36 h-8 text-white font-bentonreg rounded-2xl"onClick={()=>SetDeleteWindow(true)}>Delete</button>
+                </div>
+>>>>>>> 7749313 (meow)
             </div>    
                 </motion.div>
               <div>

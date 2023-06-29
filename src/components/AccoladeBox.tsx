@@ -4,6 +4,7 @@ import React from "react";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import "@uploadthing/react/styles.css";
 import { OurFileRouter } from "~/server/uploadthing";
 import { UploadButton } from "~/utils/uploadthing";
@@ -14,6 +15,11 @@ import { url } from "inspector";
 import { UploadButton } from "@uploadthing/react";
 
 >>>>>>> baa6929 (emwo)
+=======
+import { UploadButton } from "@uploadthing/react";
+import "@uploadthing/react/styles.css";
+import { OurFileRouter } from "~/server/uploadthing";
+>>>>>>> 7749313 (meow)
 
 const AccoladeBox = () => {
   
@@ -32,9 +38,13 @@ const AccoladeBox = () => {
     wherepubint: string
     promotionlim: string
 <<<<<<< HEAD
+<<<<<<< HEAD
     imgurl: string
 =======
 >>>>>>> baa6929 (emwo)
+=======
+    imgurl: string
+>>>>>>> 7749313 (meow)
   }  
   const notify = () => toast.success('Form submission was successful!', {
     position: "top-center",
@@ -205,8 +215,9 @@ messaging: '', frequency: '', notifDate: '', cmcontact: '', sourceatr: '', where
                   </div>
                 </div>
 
-                  <UploadButton
+                  <UploadButton<OurFileRouter>
                     endpoint="imageUploader"
+<<<<<<< HEAD
 <<<<<<< HEAD
                     onClientUploadComplete={(res:any) => {
                       // Do something with the response
@@ -218,6 +229,13 @@ messaging: '', frequency: '', notifDate: '', cmcontact: '', sourceatr: '', where
                       // Do something with the response
                       console.log("Files: ", res);
 >>>>>>> baa6929 (emwo)
+=======
+                    onClientUploadComplete={(res:any) => {
+                      // Do something with the response
+                      const response = (res[0])
+                      setForm({...form, imgurl: response.fileUrl})
+                      console.log(form)
+>>>>>>> 7749313 (meow)
                       alert("Upload Completed");
                     }}
                     onUploadError={(error: Error) => {

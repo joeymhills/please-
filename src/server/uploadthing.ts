@@ -1,9 +1,14 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 import { clerkClient, currentUser } from "@clerk/nextjs";
 =======
 >>>>>>> baa6929 (emwo)
+=======
+
+import { currentUser } from "@clerk/nextjs";
+>>>>>>> 7749313 (meow)
  
 import { createUploadthing, type FileRouter } from "uploadthing/next-legacy";
  
@@ -27,7 +32,7 @@ export const ourFileRouter = {
     // Set permissions and file types for this FileRoute
     .middleware(async ({ req, res }) => {
       // This code runs on your server before upload
-      const user = await auth(req, res);
+      const user = await currentUser;
  
       // If you throw, the user will not be able to upload
       if (!user) throw new Error("Unauthorized");

@@ -4,7 +4,11 @@ interface props {
 
 const Deletewindow = (id:props) => {
     
+<<<<<<< HEAD
     async function deleteAccolade(id:props) { 
+=======
+    async function deleteAccolade() { 
+>>>>>>> 7749313 (meow)
         try {
           await fetch("http://localhost:3000/api/delete",{
             body: JSON.stringify(id),
@@ -25,7 +29,11 @@ const Deletewindow = (id:props) => {
                 </div>
                 <div className="flex flex-row justify-center gap-2">
                     <button className="bg-white border-2 border-[#541A83] rounded-2xl text-[#541A83] h-8 w-32">Cancel</button>
+<<<<<<< HEAD
                     <button className="bg-red-500 rounded-2xl text-white h-8 w-32" onClick={()=>deleteAccolade(id)}>Delete</button>
+=======
+                    <button className="bg-red-500 rounded-2xl text-white h-8 w-32" onClick={()=>deleteAccolade}>Delete</button>
+>>>>>>> 7749313 (meow)
                 </div>
             </div>
         </div>

@@ -26,6 +26,9 @@ interface create {
     wherepubint: string
     promotionlim: string
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7749313 (meow)
     imgurl:string
 }
 =======
@@ -41,10 +44,14 @@ export default async function handler(req:NextApiRequest, res:NextApiResponse) {
 
     const {name, institution, outcome, extSource, intSource, messaging, frequency, notifDate, 
 <<<<<<< HEAD
+<<<<<<< HEAD
         cmcontact, sourceatr, wherepubint, promotionlim,comments,imgurl} = req.body
 =======
         cmcontact, sourceatr, wherepubint, promotionlim,comments} = req.body
 >>>>>>> 61b31cc (ftg)
+=======
+        cmcontact, sourceatr, wherepubint, promotionlim,comments,imgurl} = req.body
+>>>>>>> 7749313 (meow)
 
     try {
         await prisma.accolade.create({
@@ -52,10 +59,14 @@ export default async function handler(req:NextApiRequest, res:NextApiResponse) {
                 institution, name, comments, outcome, extSource,
                 intSource, messaging, frequency, notifDate, cmcontact,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 sourceatr, wherepubint, promotionlim,imgurl
 =======
                 sourceatr, wherepubint, promotionlim
 >>>>>>> 61b31cc (ftg)
+=======
+                sourceatr, wherepubint, promotionlim,imgurl
+>>>>>>> 7749313 (meow)
 
             }})
         res.status(200).json({message: 'accolade created'})

@@ -22,8 +22,15 @@
 - center "SearchInput" on "Search.tsx"
 - Finish adding all possible fields to Accolade creator
 - Fix GitHub repo and deploy to vercel
+<<<<<<< HEAD
 
 >>>>>>> aa38aee (meow)
+=======
+}
+(6/29/23) {
+- Added image uploads
+-
+>>>>>>> 7749313 (meow)
 }
 
 (6/26/23) {
@@ -47,9 +54,12 @@ STUFF TO DO: {
 <<<<<<< HEAD
 =======
     - Add editing functionality inside of the detailed view(Figure out POST requests)
+<<<<<<< HEAD
     - Add "Create another" button for "AccoladeBox"
     - IMAGE UPLOAD SUPPORT (most likely through s3 bucket)
 >>>>>>> aa38aee (meow)
+=======
+>>>>>>> 7749313 (meow)
     - dropdown for common institutions in accolade box
     - user tiers
 <<<<<<< HEAD

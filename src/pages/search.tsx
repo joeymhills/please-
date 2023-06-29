@@ -59,8 +59,12 @@ const searchPage = () => {
     const [wherepubint, setWherepubint] = useState("")
     const [promotionlim, setPromotionlim] = useState("")
 <<<<<<< HEAD
+<<<<<<< HEAD
     const [imgurl, setImgurl] = useState("")
 =======
+=======
+    const [imgurl, setImgurl] = useState("")
+>>>>>>> 7749313 (meow)
 
     // if (error) return(
     //     <>
@@ -175,8 +179,16 @@ const searchPage = () => {
           sourceatr={sourceatr}
           wherepubint={wherepubint}
           promotionlim={promotionlim}
+<<<<<<< HEAD
           imgurl={imgurl}/>
         <div className= "text-white h-10 w-10 fixed top-0 right-0 m-6 z-50" onClick={() => {setShowDetail(false)}}><XMarkIcon/></div>
+=======
+          imgurl={imgurl}
+        />
+        
+        <button type="button" className= "text-white text-5xl fixed top-0 right-0 m-6 z-50" onClick={() => {setShowDetail(false)}}>X</button>
+        
+>>>>>>> 7749313 (meow)
         </motion.div>)}
       </AnimatePresence>
 
@@ -231,10 +243,14 @@ const searchPage = () => {
           </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div className="w-full flex flex-col gap-5 justify-center align-center">
 =======
         <div className="w-full flex flex-col gap-5 justify-center align-center py-5">
 >>>>>>> db3a024 (meowowow)
+=======
+        <div className="w-full flex flex-col gap-5 justify-center align-center">
+>>>>>>> 7749313 (meow)
           
           {noSearchResults()}
           {data?.accolade.map(id => 
@@ -245,6 +261,10 @@ const searchPage = () => {
                     <div className="">{id.institution}</div>
                     <div className="font-bentonreg pt-4 text-2xl">{id.name}</div>               
                   </div>
+<<<<<<< HEAD
+=======
+                
+>>>>>>> 7749313 (meow)
 
                   <div>
                   {id.imgurl !== "" && (
@@ -288,6 +308,7 @@ const searchPage = () => {
                   setWherepubint(id.wherepubint)
                   setPromotionlim(id.promotionlim)
                   setImgurl(id.imgurl)
+<<<<<<< HEAD
                   setId(id.id)
                   setInstitution(id.institution)
                   setName(id.name)
@@ -303,6 +324,8 @@ const searchPage = () => {
                   setWherepubint(id.wherepubint)
                   setPromotionlim(id.promotionlim)
                   setImgurl(id.imgurl)
+=======
+>>>>>>> 7749313 (meow)
                   }}
                   className="bg-[#541A83] font-bentonbold text-xl text-white py-2 px-0 w-64 rounded-3xl">
                   Detailed View</button>

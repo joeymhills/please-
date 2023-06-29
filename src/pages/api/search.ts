@@ -29,10 +29,14 @@ export default async function handler(
                 },
                 {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     outcome: {
 =======
                     comments: {
 >>>>>>> 61b31cc (ftg)
+=======
+                    outcome: {
+>>>>>>> 7749313 (meow)
                         contains: query,
                     },
                 },                {
@@ -41,6 +45,9 @@ export default async function handler(
                     },
                 },
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7749313 (meow)
                 {
                     comments: {
                         contains: query,
@@ -67,8 +74,11 @@ export default async function handler(
                     },
                 },
 
+<<<<<<< HEAD
 =======
 >>>>>>> 61b31cc (ftg)
+=======
+>>>>>>> 7749313 (meow)
             ],
         },
     });
