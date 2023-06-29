@@ -11,8 +11,13 @@ import "@uploadthing/react/styles.css";
 =======
 import Link from "next/link";
 import { useState } from "react";
+<<<<<<< HEAD
 
 >>>>>>> 7749313 (meow)
+=======
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+>>>>>>> bb7767f (commit)
 
 interface Props {
 id:string,
@@ -108,8 +113,23 @@ const DetailView: React.FC<Props> = (
         
 =======
       const [deleteWindow,SetDeleteWindow] = useState(false)
+<<<<<<< HEAD
 
 >>>>>>> 7749313 (meow)
+=======
+      
+      const notifyDelete = () => toast.success('Entry was successfully deleted!', {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+        
+>>>>>>> bb7767f (commit)
       async function deleteAccolade(id: string) { 
         try {
           await fetch("http://localhost:3000/api/delete",{
@@ -121,7 +141,11 @@ const DetailView: React.FC<Props> = (
 =======
             method: 'DELETE'});
             console.log('id is: ', id)
+<<<<<<< HEAD
 >>>>>>> 7749313 (meow)
+=======
+            notifyDelete()
+>>>>>>> bb7767f (commit)
         }
         catch (error) {
             console.log('error in DELETE request()')
@@ -366,7 +390,22 @@ const DetailView: React.FC<Props> = (
                   <button className="bg-white border-2 font-bentonreg border-[#541A83] text-[#541A83] h-8 w-36 rounded-2xl"onClick={()=>SetDeleteWindow(true)}>Edit</button>
                   <button className="bg-red-500 w-36 h-8 text-white font-bentonreg rounded-2xl"onClick={()=>SetDeleteWindow(true)}>Delete</button>
                 </div>
+<<<<<<< HEAD
 >>>>>>> 7749313 (meow)
+=======
+                <ToastContainer 
+                  position="top-center"
+                  autoClose={3000}
+                  hideProgressBar={false}
+                  newestOnTop={false}
+                  closeOnClick
+                  rtl={false}
+                  pauseOnFocusLoss
+                  draggable
+                  pauseOnHover
+                  theme="light"
+                  />
+>>>>>>> bb7767f (commit)
             </div>    
                 </motion.div>
               <div>
