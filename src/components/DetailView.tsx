@@ -1,6 +1,9 @@
 import { AnimatePresence, motion } from "framer-motion";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { ChevronLeftIcon, ChevronRightIcon} from '@heroicons/react/20/solid'
+=======
+>>>>>>> ebfeca7 (mewowo)
 import { NextApiResponse } from "next";
 import Link from "next/link";
 import { useState } from "react";
@@ -58,6 +61,7 @@ const DetailView: React.FC<Props> = (
     {id,name,institution,outcome,extSource,intSource,messaging, 
     comments,frequency,notifDate,cmcontact,sourceatr,wherepubint,promotionlim,imgurl}) => {
     
+<<<<<<< HEAD
 <<<<<<< HEAD
       const [deleteWindow,setDeleteWindow] = useState(false)
       const [editWindow, setEditWindow] = useState(false)
@@ -117,6 +121,9 @@ const DetailView: React.FC<Props> = (
 
 >>>>>>> 7749313 (meow)
 =======
+=======
+      const [deleteWindow,setDeleteWindow] = useState(false)
+>>>>>>> ebfeca7 (mewowo)
       
       const notifyDelete = () => toast.success('Entry was successfully deleted!', {
         position: "top-center",
@@ -133,6 +140,7 @@ const DetailView: React.FC<Props> = (
       async function deleteAccolade(id: string) { 
         try {
           await fetch("http://localhost:3000/api/delete",{
+<<<<<<< HEAD
             body: JSON.stringify(id),
             headers: { 'Content-Type': 'Application/json'},
 <<<<<<< HEAD
@@ -144,6 +152,10 @@ const DetailView: React.FC<Props> = (
 <<<<<<< HEAD
 >>>>>>> 7749313 (meow)
 =======
+=======
+            body: id,
+            method: 'DELETE'});
+>>>>>>> ebfeca7 (mewowo)
             notifyDelete()
 >>>>>>> bb7767f (commit)
         }
@@ -345,8 +357,8 @@ const DetailView: React.FC<Props> = (
               )}
 =======
                             <div className="flex flex-row justify-center gap-2">
-                                <button className="bg-white border-2 border-[#541A83] rounded-2xl text-[#541A83] h-8 w-32" onClick={()=>deleteAccolade(id)}>Cancel</button>
-                                <button className="bg-red-500 rounded-2xl text-white h-8 w-32" onClick={()=>SetDeleteWindow(false)}>Delete</button>
+                                <button className="bg-white border-2 border-[#541A83] rounded-2xl text-[#541A83] h-8 w-32" onClick={()=>setDeleteWindow(false)}>Cancel</button>
+                                <button className="bg-red-500 rounded-2xl text-white h-8 w-32" onClick={()=>{deleteAccolade(id);setDeleteWindow(false)}}>Delete</button>
                             </div>
                         </div>
                     </div>
@@ -371,7 +383,11 @@ const DetailView: React.FC<Props> = (
                 {promotionlim !== "" && (<div className="font-bentonreg text-lg"><span className="font-bentonbold">Limitations on Promotion: </span>{promotionlim}</div>)}
                 <div className="flex flex-row justify-center items-center gap-3">
 <<<<<<< HEAD
+<<<<<<< HEAD
                   <button className="bg-white border-2 font-bentonreg border-[#541A83] text-[#541A83] h-8 w-36 rounded-2xl"onClick={()=>setEditWindow(true)}>Edit</button>
+=======
+                  <button className="bg-white border-2 font-bentonreg border-[#541A83] text-[#541A83] h-8 w-36 rounded-2xl"onClick={()=>setDeleteWindow(true)}>Edit</button>
+>>>>>>> ebfeca7 (mewowo)
                   <button className="bg-red-500 w-36 h-8 text-white font-bentonreg rounded-2xl"onClick={()=>setDeleteWindow(true)}>Delete</button>
                 </div>
                 <ToastContainer 

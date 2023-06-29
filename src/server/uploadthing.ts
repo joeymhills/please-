@@ -7,8 +7,12 @@ import { clerkClient, currentUser } from "@clerk/nextjs";
 >>>>>>> baa6929 (emwo)
 =======
 
+<<<<<<< HEAD
 import { currentUser } from "@clerk/nextjs";
 >>>>>>> 7749313 (meow)
+=======
+import { clerkClient, currentUser } from "@clerk/nextjs";
+>>>>>>> ebfeca7 (mewowo)
  
 import { createUploadthing, type FileRouter } from "uploadthing/next-legacy";
  
@@ -17,7 +21,7 @@ const f = createUploadthing();
   
 =======
  
-const auth = (req: NextApiRequest, res: NextApiResponse) => ({ id: "fakeId" }); // Fake auth function
+const auth = (req: NextApiRequest, res: NextApiResponse) => clerkClient // Fake auth function
  
 >>>>>>> baa6929 (emwo)
 // FileRouter for your app, can contain multiple FileRoutes
