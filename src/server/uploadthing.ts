@@ -18,16 +18,21 @@ import { createUploadthing, type FileRouter } from "uploadthing/next-legacy";
  
 const f = createUploadthing();
 <<<<<<< HEAD
+<<<<<<< HEAD
   
 =======
  
 const auth = (req: NextApiRequest, res: NextApiResponse) => clerkClient // Fake auth function
  
 >>>>>>> baa6929 (emwo)
+=======
+  
+>>>>>>> 62e97d9 (removed middleware functionality)
 // FileRouter for your app, can contain multiple FileRoutes
 export const ourFileRouter = {
   // Define as many FileRoutes as you like, each with a unique routeSlug
   imageUploader: f({ image: { maxFileSize: "4MB" } })
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     .onUploadComplete(async ({ file }) => {
@@ -48,6 +53,11 @@ export const ourFileRouter = {
       // This code RUNS ON YOUR SERVER after upload
       console.log("Upload complete for userId:", metadata.userId);
 >>>>>>> baa6929 (emwo)
+=======
+
+    .onUploadComplete(async ({ file }) => {
+      // This code RUNS ON YOUR SERVER after upload
+>>>>>>> 62e97d9 (removed middleware functionality)
  
       console.log("file url", file.url);
     }),
