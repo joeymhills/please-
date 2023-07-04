@@ -114,10 +114,14 @@ messaging: '', frequency: '', notifDate: '', cmcontact: '', sourceatr: '', where
             <motion.div className="flex fixed z-10 min-h-screen w-screen flex-col items-center bg-black/50 ">
               <motion.div
 <<<<<<< HEAD
+<<<<<<< HEAD
               className={'flex w-200 flex-col z-20 rounded-2xl m-4 items-center justify-center bg-slate-100'}>
 =======
               className={`flex w-236 flex-col z-20 rounded-2xl m-4 items-center justify-center bg-slate-100`}>
 >>>>>>> aa38aee (meow)
+=======
+              className={'flex w-200 flex-col z-20 rounded-2xl m-4 items-center justify-center bg-slate-100'}>
+>>>>>>> 60c819b (mewow)
                 <div className="flex flex-col pt-2 items-center justify-center">
                 <h1 className="font-bentonbold text-[#541A83] text-4xl py-4 ">Create an Accolade</h1>
 
@@ -153,12 +157,15 @@ messaging: '', frequency: '', notifDate: '', cmcontact: '', sourceatr: '', where
                   </input>
 
                   <input 
+<<<<<<< HEAD
                   type="text" name="extSource" value={form.extSource} onChange ={e=> setForm({...form, extSource: e.target.value})}
                   className= "p-3 rounded-xl w-96" placeholder="External Source & Contact">
 >>>>>>> 91d866e (meow)
                   </input>
 
                   <input 
+=======
+>>>>>>> 60c819b (mewow)
                   type="text" name="frequency" value={form.frequency} onChange ={e=> setForm({...form, frequency: e.target.value})}
                   className= "p-3 rounded-xl w-96" placeholder="Frequency">
                   </input>
@@ -194,9 +201,10 @@ messaging: '', frequency: '', notifDate: '', cmcontact: '', sourceatr: '', where
                   className= "p-3 rounded-xl w-96" placeholder="Limitations on Promotion">
                   </input>
 
-                  <div className="flex flex-col items-center justify-center">
-                    <button type="button" className="bg-white text-xl text-[#541A83]  py-4 m-1 w-96 rounded-2xl">Upload an Image</button>
-                  </div>
+                  <textarea 
+                  name="extSource" value={form.extSource} onChange ={e=> setForm({...form, extSource: e.target.value})}
+                  className= "p-3 rounded-xl h-48 w-96" placeholder="External Source & Contact">
+                  </textarea>
 
                   <textarea 
                   name="extSource" value={form.extSource} onChange ={e=> setForm({...form, extSource: e.target.value})}

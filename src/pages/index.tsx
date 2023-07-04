@@ -71,39 +71,57 @@ const Home: NextPage = () => {
             #The<span className="font-bentonbold">BestOutcomes</span>
           </h1>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 60c819b (mewow)
           
           <div>
             <div className="max-w-2xl text-white text-3xl font-bentonbold ">
               <p>
+<<<<<<< HEAD
 =======
           <div className="max-w-xl text-white text-3xl leading-tight font-bentonbold ">
             <p>
 >>>>>>> 7749313 (meow)
+=======
+>>>>>>> 60c819b (mewow)
               Welcome to our online search tool for NYU Langone Health’s Accolades, Outcomes and Awards. Search below using free text to search for an award by service line, location, awarding organization and more. Or click one of the locations below to start a search by location. 
               </p>
             </div>
           </div>
 
+<<<<<<< HEAD
           <div className="py-11 max-w-4xl">
+=======
+          <div className="py-16 max-w-4xl">
+>>>>>>> 60c819b (mewow)
             <div className="flex flex-row gap-1">
               <SearchInput />
             </div>
           </div>
           
 <<<<<<< HEAD
+<<<<<<< HEAD
           <div className="grid grid-cols-3 max-w-5xl gap-10 ">
 =======
           <div className="grid grid-cols-3 max-w-5xl gap-5">
 >>>>>>> 7749313 (meow)
+=======
+          <div className="grid grid-cols-3 max-w-5xl gap-10 ">
+>>>>>>> 60c819b (mewow)
             <button type="button" onClick = {() => router.push("/search?q=tisch%20kimmel")} className="flex flex-col items-center justify-center gap-4 ">
               <Image src={grid1} className="w-80 drop-shadow-lg" alt={""} />
               <p className="text-white font-bentonbold">Tisch Hospital and Kimmel Pavilion</p>
             </button>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 60c819b (mewow)
               <button type="button" onClick = {() => router.push("/search?q=NYU")} className="flex flex-col items-center justify-center gap-4 ">
               <Image src={grid1} className="w-80 drop-shadow-lg" alt={""} />
               <p className="text-white font-bentonbold">Institution-Wide Accolades</p>
               </button>
+<<<<<<< HEAD
 =======
             <button type="button" onClick = {() => router.push("/search?q=NYU")} className="flex flex-col items-center justify-center gap-4 ">
             <div className="flex flex-col drop-shadow-lg justify-center items-center rounded-3xl w-80 h-60 bg-[#541A83]">
@@ -116,6 +134,8 @@ const Home: NextPage = () => {
               <p className="text-white pt-9 font-bentonbold">Institution-Wide Accolades</p>
             </button>
 >>>>>>> 7749313 (meow)
+=======
+>>>>>>> 60c819b (mewow)
             <button type="button" onClick = {() => router.push("/search?q=-brooklyn")} className="flex flex-col items-center justify-center gap-4 ">
               <Image src={grid3} className="w-80 drop-shadow-lg" alt={""} />
               <p className="text-white font-bentonbold">NYU Langone Hospital—Brooklyn</p>
@@ -137,10 +157,14 @@ const Home: NextPage = () => {
               <p className="text-white font-bentonbold">Medical Education</p>
             </button>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <button type="button" onClick = {() => router.push("/search?q=medical")} className="flex flex-col items-center justify-center gap-4 z-0">
 =======
             <button type="button" onClick = {() => router.push("/search?q=medical")} className="flex flex-col items-center justify-center gap-">
 >>>>>>> 7749313 (meow)
+=======
+            <button type="button" onClick = {() => router.push("/search?q=medical")} className="flex flex-col items-center justify-center gap-4 z-0">
+>>>>>>> 60c819b (mewow)
               <Image src={grid8} className="w-80 drop-shadow-lg" alt={""} />
               <p className="text-white font-bentonbold">Research</p>
             </button>

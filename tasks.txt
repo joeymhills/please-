@@ -51,6 +51,7 @@
 =======
 >>>>>>> 1aef30b (meowowowwo)
 }
+<<<<<<< HEAD
 STUFF TO DO: {
     
     BACKEND/API {
@@ -72,6 +73,20 @@ STUFF TO DO: {
 =======
     -filtering and sorting
 >>>>>>> baa6929 (emwo)
+=======
+(6/30/23) {
+- implemented delete accolade feature
+- implemented editing feature
+}
+STUFF TO DO: {
+    
+    BACKEND/API {
+    - dropdown for common institutions in accolade box
+    - user tiers
+    - using shared state/useEffect in order to update 
+    -filtering and sorting
+    -update state of deleted/edited entry
+>>>>>>> 60c819b (mewow)
 
 
     -fix all TS errors (change build command back to default)
@@ -80,6 +95,9 @@ STUFF TO DO: {
     STYLING {
     
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 60c819b (mewow)
     - Add titles for fields in edit view
     - Add responsiveness to design (site-wide) {
         -landing page
@@ -91,11 +109,14 @@ STUFF TO DO: {
     }
     - cute animations
     - fix landing page nyu image
+<<<<<<< HEAD
 =======
     - Add responsiveness to design (site-wide)
     - fix landing page grid(uneven)
     - update landing page grid images
 >>>>>>> aa38aee (meow)
+=======
+>>>>>>> 60c819b (mewow)
     - make comments and messaging "scrollable" in detail view
 
     }

@@ -13,12 +13,15 @@ import router from "next/router";
 <<<<<<< HEAD
 import { Ring, Waveform } from "@uiball/loaders";
 import Dropdown from "~/components/Dropdown";
+<<<<<<< HEAD
 import { XMarkIcon } from "@heroicons/react/20/solid";
 =======
 >>>>>>> 549d843 (bjk)
 =======
 import { Ring, Waveform } from "@uiball/loaders";
 >>>>>>> db3a024 (meowowow)
+=======
+>>>>>>> 60c819b (mewow)
 
 const fetchAccolades = async (url: string) => {
     const response = await fetch(url);
@@ -66,6 +69,7 @@ const searchPage = () => {
     const [imgurl, setImgurl] = useState("")
 >>>>>>> 7749313 (meow)
 
+<<<<<<< HEAD
     // if (error) return(
     //     <>
     //     <div className="w-full h-10 bg-[#541A83]" />
@@ -140,6 +144,8 @@ const searchPage = () => {
     // )
 >>>>>>> db3a024 (meowowow)
 
+=======
+>>>>>>> 60c819b (mewow)
     const noSearchResults = () => {
     if (data?.accolade.length === 0) {
       return(
@@ -180,6 +186,7 @@ const searchPage = () => {
           wherepubint={wherepubint}
           promotionlim={promotionlim}
 <<<<<<< HEAD
+<<<<<<< HEAD
           imgurl={imgurl}/>
         <div className= "text-white h-10 w-10 fixed top-0 right-0 m-6 z-50" onClick={() => {setShowDetail(false)}}><XMarkIcon/></div>
 =======
@@ -189,6 +196,10 @@ const searchPage = () => {
         <button type="button" className= "text-white text-5xl fixed top-0 right-0 m-6 z-50" onClick={() => {setShowDetail(false)}}>X</button>
         
 >>>>>>> 7749313 (meow)
+=======
+          imgurl={imgurl}/>
+        <button type="button" className= "text-white text-5xl fixed top-0 right-0 m-6 z-50" onClick={() => {setShowDetail(false)}}>X</button>
+>>>>>>> 60c819b (mewow)
         </motion.div>)}
       </AnimatePresence>
 
@@ -217,6 +228,9 @@ const searchPage = () => {
             </div>
           </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 60c819b (mewow)
           <div className="flex flex-row justify-center items-center gap-5">
             <Dropdown />
             <Dropdown />
@@ -292,7 +306,11 @@ const searchPage = () => {
                 <button type="button" onClick = {() => {
                   
                   setShowDetail(true)
+<<<<<<< HEAD
 
+=======
+                  
+>>>>>>> 60c819b (mewow)
                   setId(id.id)
                   setInstitution(id.institution)
                   setName(id.name)
