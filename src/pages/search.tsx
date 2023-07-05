@@ -14,6 +14,7 @@ import router from "next/router";
 import { Ring, Waveform } from "@uiball/loaders";
 import Dropdown from "~/components/Dropdown";
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { XMarkIcon } from "@heroicons/react/20/solid";
 =======
 >>>>>>> 549d843 (bjk)
@@ -22,6 +23,9 @@ import { Ring, Waveform } from "@uiball/loaders";
 >>>>>>> db3a024 (meowowow)
 =======
 >>>>>>> 60c819b (mewow)
+=======
+import { XMarkIcon } from "@heroicons/react/20/solid";
+>>>>>>> f48f340 (meow)
 
 const fetchAccolades = async (url: string) => {
     const response = await fetch(url);
@@ -198,8 +202,12 @@ const searchPage = () => {
 >>>>>>> 7749313 (meow)
 =======
           imgurl={imgurl}/>
+<<<<<<< HEAD
         <button type="button" className= "text-white text-5xl fixed top-0 right-0 m-6 z-50" onClick={() => {setShowDetail(false)}}>X</button>
 >>>>>>> 60c819b (mewow)
+=======
+        <div className= "text-white h-10 w-10 fixed top-0 right-0 m-6 z-50" onClick={() => {setShowDetail(false)}}><XMarkIcon/></div>
+>>>>>>> f48f340 (meow)
         </motion.div>)}
       </AnimatePresence>
 
@@ -276,9 +284,12 @@ const searchPage = () => {
                     <div className="font-bentonreg pt-4 text-2xl">{id.name}</div>               
                   </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 
 >>>>>>> 7749313 (meow)
+=======
+>>>>>>> f48f340 (meow)
 
                   <div>
                   {id.imgurl !== "" && (
@@ -307,10 +318,29 @@ const searchPage = () => {
                   
                   setShowDetail(true)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
                   
 >>>>>>> 60c819b (mewow)
+=======
+
+                  setId(id.id)
+                  setInstitution(id.institution)
+                  setName(id.name)
+                  setOutcome(id.outcome)
+                  setExtSource(id.extSource)
+                  setIntSource(id.intSource)
+                  setMessaging(id.messaging)
+                  setComments(id.comments)
+                  setFrequency(id.frequency)
+                  setNotifDate(id.notifDate)
+                  setCmcontact(id.cmcontact)
+                  setSourceatr(id.sourceatr)
+                  setWherepubint(id.wherepubint)
+                  setPromotionlim(id.promotionlim)
+                  setImgurl(id.imgurl)
+>>>>>>> f48f340 (meow)
                   setId(id.id)
                   setInstitution(id.institution)
                   setName(id.name)

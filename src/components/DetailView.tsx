@@ -1,9 +1,13 @@
 import { AnimatePresence, motion } from "framer-motion";
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { ChevronLeftIcon, ChevronRightIcon} from '@heroicons/react/20/solid'
 =======
 >>>>>>> ebfeca7 (mewowo)
+=======
+import { ChevronLeftIcon, ChevronRightIcon} from '@heroicons/react/20/solid'
+>>>>>>> f48f340 (meow)
 import { NextApiResponse } from "next";
 import Link from "next/link";
 import { useState } from "react";
@@ -73,10 +77,14 @@ const DetailView: React.FC<Props> = (
       const [deleteWindow,setDeleteWindow] = useState(false)
       const [editWindow, setEditWindow] = useState(false)
 <<<<<<< HEAD
+<<<<<<< HEAD
       const [editPage, setEditPage] = useState(1)
 =======
 
 >>>>>>> 60c819b (mewow)
+=======
+      const [editPage, setEditPage] = useState(1)
+>>>>>>> f48f340 (meow)
       const [form, setForm] = useState<FormData>({id: id, institution: institution, name: name, comments: comments, outcome: outcome, intSource: intSource, extSource: extSource,
       messaging: messaging, frequency: frequency, notifDate: notifDate, cmcontact: cmcontact, sourceatr: sourceatr, wherepubint: wherepubint, promotionlim: promotionlim, imgurl:imgurl})
 
@@ -191,21 +199,29 @@ const DetailView: React.FC<Props> = (
 
               {deleteWindow &&(
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <motion.div className="flex fixed top-0 right-0 z-30 min-h-screen w-screen flex-col bg-black/50 items-center">
 =======
                 <motion.div className="flex fixed top-0 right-0 z-30 min-h-screen w-screen flex-col items-center">
 >>>>>>> 7749313 (meow)
+=======
+                <motion.div className="flex fixed top-0 right-0 z-30 min-h-screen w-screen flex-col bg-black/50 items-center">
+>>>>>>> f48f340 (meow)
                     <div className="w-96 h-54 z-80 p-5 m-2 bg-white border-2 border-slate-300 fixed rounded-2xl">
                         <div className="flex flex-col justify-center items-center gap-3"> 
                             <div>
                                 <p className="text-center">Are you sure you want to delete this entry?(This action cannot be undone)</p>
                             </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f48f340 (meow)
                             
                               <div className="flex flex-row justify-center gap-2">
                                   <button className="bg-white border-2 border-[#541A83] rounded-2xl text-[#541A83] h-8 w-32" onClick={()=>setDeleteWindow(false)}>Cancel</button>
                                   <button className="bg-red-500 rounded-2xl text-white h-8 w-32" onClick={()=>{deleteAccolade(id);setDeleteWindow(false)}}>Delete</button>
                               </div>
+<<<<<<< HEAD
                             </div>
                       </div>
                 </motion.div>
@@ -379,9 +395,10 @@ const DetailView: React.FC<Props> = (
                             <div className="flex flex-row justify-center gap-2">
                                 <button className="bg-white border-2 border-[#541A83] rounded-2xl text-[#541A83] h-8 w-32" onClick={()=>setDeleteWindow(false)}>Cancel</button>
                                 <button className="bg-red-500 rounded-2xl text-white h-8 w-32" onClick={()=>{deleteAccolade(id);setDeleteWindow(false)}}>Delete</button>
+=======
+>>>>>>> f48f340 (meow)
                             </div>
-                        </div>
-                    </div>
+                      </div>
                 </motion.div>
               )}
 <<<<<<< HEAD
@@ -389,82 +406,134 @@ const DetailView: React.FC<Props> = (
 =======
 
               {editWindow &&(
-            <motion.div className="flex fixed z-10 min-h-screen w-screen flex-col items-center ">
+            <motion.div className="flex fixed z-10 min-h-screen w-screen flex-col items-center bg-black/50">
             <motion.div
-            className={'flex w-200 flex-col z-20 rounded-2xl m-4 items-center justify-center bg-slate-100'}>
-              <div className="flex flex-col pt-2 items-center justify-center">
-              <h1 className="font-bentonbold text-[#541A83] text-4xl py-4 "></h1>
+            className={'flex w-200 flex-col z-20 rounded-2xl m-2 items-center justify-center bg-slate-100'}>
+              <div className="flex flex-col items-center justify-center">
 
               <form onSubmit = {e => { e.preventDefault(); handleSubmit(form)}}
                className="flex flex-col items-center justify-center w-200">
                 
                 <div className="grid grid-cols-2 gap-3 p-5">
-                <input 
-                type="text" name="institution" value={form.institution} onChange ={e=> setForm({...form, institution: e.target.value})} className= "p-3 rounded-xl w-96" placeholder="Institution name">
-                </input>
 
-                <input 
-                type="text" name="accolade" value={form.name} onChange ={e=> setForm({...form, name: e.target.value})}
-                className= "p-3 rounded-xl w-96" placeholder="Accolade name">
-                </input>
-
-                <input 
-                type="text" name="outcome" value={form.outcome} onChange ={e=> setForm({...form, outcome: e.target.value})}
-                className= "p-3 rounded-xl w-96" placeholder="Related Outcome">
-                </input>
-
-                <input 
-                type="text" name="intSource" value={form.intSource} onChange ={e=> setForm({...form, intSource: e.target.value})}
-                className= "p-3 rounded-xl w-96" placeholder="Internal Source, Contact & Approvals">
-                </input>
-
-                <input 
-                type="text" name="frequency" value={form.frequency} onChange ={e=> setForm({...form, frequency: e.target.value})}
-                className= "p-3 rounded-xl w-96" placeholder="Frequency">
-                </input>
-
-                <input 
-                type="text" name="notifDate" value={form.notifDate} onChange ={e=> setForm({...form, notifDate: e.target.value})}
-                className= "p-3 rounded-xl w-96" placeholder="Notification Date">
-                </input>
-
-                <input 
-                type="text" name="cmcontact" value={form.cmcontact} onChange ={e=> setForm({...form, cmcontact: e.target.value})}
-                className= "p-3 rounded-xl w-96" placeholder="C&M Service Line Contact">
-                </input>
-
-                <input 
-                type="text" name="sourceatr" value={form.sourceatr} onChange ={e=> setForm({...form, sourceatr: e.target.value})}
-                className= "p-3 rounded-xl w-96" placeholder="Source Attribution">
-                </input>
-
-                <input 
-                type="text" name="wherepubint" value={form.wherepubint} onChange ={e=> setForm({...form, wherepubint: e.target.value})}
-                className= "p-3 rounded-xl w-96" placeholder="Where published internally?">
-                </input>
-
-                <input 
-                type="text" name="promotionlim" value={form.promotionlim} onChange ={e=> setForm({...form, promotionlim: e.target.value})}
-                className= "p-3 rounded-xl w-96" placeholder="Limitations on Promotion">
-                </input>
-
-                <textarea 
-                name="extSource" value={form.extSource} onChange ={e=> setForm({...form, extSource: e.target.value})}
-                className= "p-3 rounded-xl h-48 w-96" placeholder="External Source & Contact">
-                </textarea>
-
-                <textarea 
-                name="messaging" value={form.messaging} onChange ={e=> setForm({...form, messaging: e.target.value})}
-                className= "p-3 rounded-xl h-48 w-96" placeholder="Enter messaging">
-                </textarea>
-
-                <textarea 
-                name="comments" value={form.comments} onChange ={e=> setForm({...form, comments: e.target.value})}
-                className= "p-3 rounded-xl h-48 w-96" placeholder="Enter any comments">
-                </textarea>
+                {(editPage == 1) &&(   
+                <>             
+                <div>
+                  <h1 className="pl-2 font-bentonbold">Institution</h1>
+                  <input 
+                  type="text" name="institution" value={form.institution} onChange ={e=> setForm({...form, institution: e.target.value})} className= "p-3 rounded-xl w-96" >
+                  </input>
+                </div>
                 
+                <div>
+                  <h1 className="pl-2 font-bentonbold">Accolade Name</h1>
+                  <input 
+                  type="text" name="accolade" value={form.name} onChange ={e=> setForm({...form, name: e.target.value})}
+                  className= "p-3 rounded-xl w-96" >
+                  </input>
+                </div>
+                
+                <div>              
+                  <h1 className="pl-2 font-bentonbold">Related Outcome</h1>
+                  <input 
+                  type="text" name="outcome" value={form.outcome} onChange ={e=> setForm({...form, outcome: e.target.value})}
+                  className= "p-3 rounded-xl w-96" >
+                  </input>
                 </div>
 
+                <div>
+                  <h1 className="pl-2 font-bentonbold">Internal Source, Contact & Approvals</h1>
+                  <input 
+                  type="text" name="intSource" value={form.intSource} onChange ={e=> setForm({...form, intSource: e.target.value})}
+                  className= "p-3 rounded-xl w-96" >
+                  </input>
+                </div>
+                
+                <div>
+                  <h1 className="pl-2 font-bentonbold">Frequency</h1>
+                  <input 
+                  type="text" name="frequency" value={form.frequency} onChange ={e=> setForm({...form, frequency: e.target.value})}
+                  className= "p-3 rounded-xl w-96" >
+                  </input>
+                </div>
+
+                <div>
+                  <h1 className="pl-2 font-bentonbold">Notification Date</h1>
+                  <input 
+                  type="text" name="notifDate" value={form.notifDate} onChange ={e=> setForm({...form, notifDate: e.target.value})}
+                  className= "p-3 rounded-xl w-96" >
+                  </input>
+                </div>
+
+                <div>
+                  <h1 className="pl-2 font-bentonbold">C&M Service Line Contact</h1>
+                  <input 
+                  type="text" name="cmcontact" value={form.cmcontact} onChange ={e=> setForm({...form, cmcontact: e.target.value})}
+                  className= "p-3 rounded-xl w-96" >
+                  </input>
+                </div>
+
+                <div>
+                  <h1 className="pl-2 font-bentonbold">Source Attribution</h1>
+                  <input 
+                  type="text" name="sourceatr" value={form.sourceatr} onChange ={e=> setForm({...form, sourceatr: e.target.value})}
+                  className= "p-3 rounded-xl w-96" >
+                  </input>
+                </div>
+
+                <div>
+                  <h1 className="pl-2 font-bentonbold">Where Published Internally</h1>
+                  <input 
+                  type="text" name="wherepubint" value={form.wherepubint} onChange ={e=> setForm({...form, wherepubint: e.target.value})}
+                  className= "p-3 rounded-xl w-96" >
+                  </input>
+                </div>
+
+                <div>
+                  <h1 className="pl-2 font-bentonbold">Limitations on Promotion</h1>
+                  <input 
+                  type="text" name="promotionlim" value={form.promotionlim} onChange ={e=> setForm({...form, promotionlim: e.target.value})}
+                  className= "p-3 rounded-xl w-96" >
+                  </input>
+                </div>
+                </>
+                )}
+
+                
+                {(editPage == 2) &&(   
+                <>
+                <div>
+                <h1 className="pl-2 font-bentonbold">External Source & Contact</h1>
+                <textarea 
+                name="extSource" value={form.extSource} onChange ={e=> setForm({...form, extSource: e.target.value})}
+                className= "p-3 rounded-xl h-48 w-96" >
+                </textarea>
+                </div>
+
+                <div>
+                <h1 className="pl-2 font-bentonbold">Messaging</h1>
+                <textarea 
+                name="messaging" value={form.messaging} onChange ={e=> setForm({...form, messaging: e.target.value})}
+                className= "p-3 rounded-xl h-48 w-96" >
+                </textarea>
+                </div>
+
+                <div>
+                  <h1 className="pl-2 font-bentonbold">Comments</h1>
+                <textarea 
+                name="comments" value={form.comments} onChange ={e=> setForm({...form, comments: e.target.value})}
+                className= "p-3 rounded-xl h-48 w-96" >
+                </textarea>
+                </div>
+                </>
+                )} 
+                </div>
+                
+                <div className="w-200 flex flex-row justify-end px-10">
+                  <div className="flex flex-row justify-between">
+                    <div className="h-7 w-7 hover: cursor-pointer" onClick={() =>{setEditPage(1)}}><ChevronLeftIcon/></div><div className="font-bentonreg text-lg">Page {editPage}</div><div className="h-7 w-7 hover: cursor-pointer" onClick={() =>{setEditPage(2)}}><ChevronRightIcon/></div>
+                  </div>
+                </div>
                 <UploadButton
                   endpoint="imageUploader"
                   onClientUploadComplete={(res:any) => {
@@ -479,7 +548,7 @@ const DetailView: React.FC<Props> = (
                     alert(`ERROR! ${error.message}`);
                   }}
                 />
-                <button type="submit" onClick={() => handleSubmit(form)} className="bg-[#541A83] font-bentonbold text-xl text-white py-2 m-4 w-64 rounded-3xl">Submit</button>
+                <button type="submit" onClick={() => {handleSubmit(form); setEditWindow(false)}} className="bg-[#541A83] font-bentonbold text-xl text-white py-2 m-4 w-64 rounded-3xl">Submit</button>
                 
                 <ToastContainer 
                 position="top-center"

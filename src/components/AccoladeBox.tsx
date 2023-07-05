@@ -11,6 +11,7 @@ import { OurFileRouter } from "~/server/uploadthing";
 import { UploadButton } from "~/utils/uploadthing";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid";
 import Page from "~/pages/sign-in/[[...index]]";
+<<<<<<< HEAD
 =======
 import { url } from "inspector";
 import { UploadButton } from "@uploadthing/react";
@@ -26,6 +27,8 @@ import "@uploadthing/react/styles.css";
 import { OurFileRouter } from "~/server/uploadthing";
 import { UploadButton } from "~/utils/uploadthing";
 >>>>>>> 1aef30b (meowowowwo)
+=======
+>>>>>>> f48f340 (meow)
 
 const AccoladeBox = () => {
   
@@ -130,11 +133,17 @@ messaging: '', frequency: '', notifDate: '', cmcontact: '', sourceatr: '', where
                   
                   <div className="grid grid-cols-2 gap-3 p-5">
 <<<<<<< HEAD
+<<<<<<< HEAD
                   
                   {(page == 1) && (
                   <>
 =======
 >>>>>>> 11078ab (styleing)
+=======
+                  
+                  {(page == 1) && (
+                  <>
+>>>>>>> f48f340 (meow)
                   <input 
                   type="text" name="institution" value={form.institution} onChange ={e=> setForm({...form, institution: e.target.value})} className= "p-3 rounded-xl w-96" placeholder="Institution name">
                   </input>

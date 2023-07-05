@@ -46,10 +46,14 @@ const Home: NextPage = () => {
         <AccoladeBox />
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div className=" w-10 h-10 text-white fixed top-0 right-0 m-4 z-20 hover: cursor-pointer" onClick={() => setShowForm(false)}><XMarkIcon /></div>
 =======
         <button type="button" className="text-white text-5xl fixed top-0 right-0 m-4 z-20"onClick={() => setShowForm(false)}>X</button>
 >>>>>>> aa38aee (meow)
+=======
+        <div className=" w-10 h-10 text-white fixed top-0 right-0 m-4 z-20 hover: cursor-pointer" onClick={() => setShowForm(false)}><XMarkIcon /></div>
+>>>>>>> f48f340 (meow)
         
         </motion.div>)}
       </AnimatePresence>
@@ -91,10 +95,14 @@ const Home: NextPage = () => {
           </div>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
           <div className="py-11 max-w-4xl">
 =======
           <div className="py-16 max-w-4xl">
 >>>>>>> 60c819b (mewow)
+=======
+          <div className="py-11 max-w-4xl">
+>>>>>>> f48f340 (meow)
             <div className="flex flex-row gap-1">
               <SearchInput />
             </div>
