@@ -1,0 +1,35 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+datasource db {
+  provider = "mysql"
+  url = env("DATABASE_URL")
+  relationMode = "prisma"
+}
+
+model accolade {
+    id           String   @id @default(cuid())
+    name         String?   @db.VarChar(255)
+    institution  String?   @db.VarChar(255)
+    outcome      String?   @db.VarChar(255)
+    extSource    String?   @db.VarChar(500)
+    intSource    String?   @db.VarChar(500)
+    messaging    String?   @db.VarChar(2500)
+    comments     String?   @db.VarChar(2500)
+    frequency    String?   @db.VarChar(500)
+    notifDate    String?   @db.VarChar(255)
+    cmcontact    String?   @db.VarChar(255)
+    sourceatr    String?   @db.VarChar(255)
+    wherepubint  String?   @db.VarChar(255)
+    promotionlim String?   @db.VarChar(500)
+    imgurl       String?   @db.VarChar(200)
+
+    @@index([institution])
+    
+
+    
+
+}

@@ -1,0 +1,66 @@
+(6/21/23) ~ 5 hours {
+- Added "No results found" message when no results are found.
+- Loading animations
+- Added "Detailed View" for each Accolade
+- Figured out how to pass each Accolades ID through to DetailView Component(Needed for updating/ deleting)
+- Added "back to homepage" on logo click
+}
+
+(6/22/23) ~ 1hour {
+ - Added conditional rendering for accolade fields(in preview view)
+
+}
+
+(6/25/23) ~ 3hours{
+- Finished Accolade Creator, now successfully interacts with "api/create"
+}
+
+(6/26/23) {
+- Success messages
+- center "SearchInput" on "Search.tsx"
+- Finish adding all possible fields to Accolade creator
+- Fix GitHub repo and deploy to vercel
+}
+(6/29/23) {
+- Added image uploads
+- Styled images within card
+- Fixed font sizes
+}
+(6/30/23) {
+- implemented delete accolade feature
+- implemented editing feature
+}
+STUFF TO DO: {
+    
+    BACKEND/API {
+    - dropdown for common institutions in accolade box
+    - user tiers
+    - using shared state/useEffect in order to update 
+    -filtering and sorting
+    -update state of deleted/edited entry
+
+
+    -fix all TS errors (change build command back to default)
+    }
+    
+    STYLING {
+    
+    - Add titles for fields in edit view
+    - Add responsiveness to design (site-wide) {
+        -landing page
+        -search page
+        -accolade creator
+        -detail view
+        -delete window
+        -edit view
+    }
+    - cute animations
+    - fix landing page nyu image
+    - make comments and messaging "scrollable" in detail view
+
+    }
+    
+    PRODUCTION {
+    
+    }
+}
