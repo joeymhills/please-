@@ -6,20 +6,10 @@
       "dom.iterable",
       "esnext"
     ],
-<<<<<<< HEAD
-<<<<<<< HEAD
    
-=======
->>>>>>> 3b38715 (disabled linting)
-=======
-   
->>>>>>> b443b1c (meowow)
     
     "allowJs": true,
     "checkJs": true,
-
-    "strictNullChecks":false,
-    
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
